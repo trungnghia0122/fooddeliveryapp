@@ -86,9 +86,9 @@ const Cart = () => {
 
           <Button
             onPress={handleCheckout}
-            variant='outline'
+            variant='solid'
             size='lg'
-            style={{ marginVertical: 40, marginHorizontal: 20 }}
+            style={{ marginVertical: 60, marginHorizontal: 20 }}
             className='bg-blue-500 text-typography-900'
           >
             <ButtonText>Checkout</ButtonText>

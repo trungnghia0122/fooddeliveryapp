@@ -32,7 +32,7 @@ const FoodDetailModal = ({
         <Image source={image} style={{ width: 350, height: 200 }} />
         <Box style={{ gap: 10, marginTop: 20, alignItems: "center" }}>
           <Text style={{ fontSize: 20, fontWeight: "bold" }}> {name}</Text>
-          <Text> {description}</Text>
+          <Text style={{ marginHorizontal: 20 }}> {description}</Text>
         </Box>
       </Box>
 

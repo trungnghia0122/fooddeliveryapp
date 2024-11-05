@@ -12,21 +12,24 @@ const Drinks = () => {
       name: "Coke",
       price: 2.99,
       image: require("../../assets/images/coke.jpg"),
-      description: "This is a description of the item",
+      description:
+        "Coca-Cola, or Coke, is a globally recognized carbonated soft drink known for its sweet, citrusy flavor and iconic red and white branding.",
     },
     {
       id: 2,
       name: "Blueberry Hibiscus",
       price: 2.99,
       image: require("../../assets/images/blueberry.jpg"),
-      description: "This is a description of the item",
+      description:
+        "A blueberry hibiscus drink is a refreshing beverage that combines the sweet-tart flavors of blueberries with the floral notes of hibiscus.",
     },
     {
       id: 3,
       name: "Lemonade",
       price: 2.99,
       image: require("../../assets/images/lemonade.jpg"),
-      description: "This is a description of the item",
+      description:
+        "A refreshing drink made from freshly squeezed lemons, water, and sugar.",
     },
   ]
 

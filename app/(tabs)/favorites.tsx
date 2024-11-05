@@ -12,28 +12,32 @@ const Favorites = () => {
       name: "Braised Pork Chop",
       price: 17.99,
       image: require("../../assets/images/porkchop.jpg"),
-      description: "This is a description of the item",
+      description:
+        "A braised pork chop is a tender, flavorful dish where pork chops are slow-cooked in a savory liquid until juicy and infused with rich, deep flavors.",
     },
     {
       id: 2,
       name: "Italian Pizza",
       price: 14.99,
       image: require("../../assets/images/pizza.jpg"),
-      description: "This is a description of the item",
+      description:
+        "Italian pizza is a classic dish featuring a thin, crispy crust topped with tomato sauce, mozzarella cheese, and a variety of fresh ingredients, baked to perfection.",
     },
     {
       id: 3,
       name: "Filet Mignon",
       price: 21.99,
       image: require("../../assets/images/steak.jpg"),
-      description: "This is a description of the item",
+      description:
+        "Filet mignon is a premium cut of beef known for its tenderness and buttery texture, often served as a luxurious steak.",
     },
     {
       id: 4,
       name: "Seafood Curry",
       price: 17.99,
       image: require("../../assets/images/shrimpsoup.jpg"),
-      description: "This is a description of the item",
+      description:
+        "Seafood curry is a flavorful dish featuring a variety of seafood simmered in a rich, aromatic curry sauce with spices and coconut milk.",
     },
   ]
 
