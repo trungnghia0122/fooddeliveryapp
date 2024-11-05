@@ -5,10 +5,11 @@ const Index = () => {
   return (
     <Center
       style={{
-        marginTop: 100,
         justifyContent: "center",
-        marginHorizontal: 40,
-        gap: 40,
+        paddingHorizontal: 40,
+        gap: 20,
+        flex: 1,
+        backgroundColor: "#ffffff",
       }}
     >
       <Text style={{ fontSize: 20, fontWeight: "bold", textAlign: "center" }}>
@@ -17,9 +18,8 @@ const Index = () => {
       <Text style={{ fontSize: 12, textAlign: "center" }}>
         This is a react native app that clones basic functionalities as any food
         delivery app. These functionalities include menu browsing, adding to
-        cart, order placement, and user authentication. The tech stack includes,
-        React Native/Expo: Mobile Development, Typescript: Frontend, Context
-        API: State Management, and Firebase: Backend/Database.
+        cart, and order placement. The tech stack includes, React Native/Expo:
+        Mobile Development, Typescript: Frontend, Context API: State Management
       </Text>
     </Center>
   )

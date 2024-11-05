@@ -1,11 +1,11 @@
-import { Text, ScrollView } from "react-native"
+import { Text, ScrollView, View } from "react-native"
 import { router, Stack } from "expo-router"
 import Ionicons from "@expo/vector-icons/Ionicons"
 import { CartContext } from "@/context/CartContext"
 import { useContext } from "react"
 import { Center } from "@/components/ui/center"
 import CartItem from "@/components/CartItem"
-import { Button } from "@/components/ui/button"
+import { Button, ButtonText } from "@/components/ui/button"
 import { Divider } from "@/components/ui/divider"
 import { Box } from "@/components/ui/box"
 import { Modal, ModalBackdrop, ModalContent } from "@/components/ui/modal"
@@ -20,7 +20,7 @@ const Cart = () => {
   }
 
   return (
-    <>
+    <View style={{ backgroundColor: "#faf4f6", flex: 1 }}>
       <Stack.Screen
         options={{
           headerTitle: `Cart (${cartItems.length})`,
@@ -89,12 +89,13 @@ const Cart = () => {
             variant='outline'
             size='lg'
             style={{ marginVertical: 40, marginHorizontal: 20 }}
+            className='bg-blue-500 text-typography-900'
           >
-            <Text>Checkout</Text>
+            <ButtonText>Checkout</ButtonText>
           </Button>
         </Box>
       )}
-    </>
+    </View>
   )
 }
 

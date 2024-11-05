@@ -9,30 +9,30 @@ const Favorites = () => {
   const foodData = [
     {
       id: 1,
-      name: "Pelehu Plate",
-      price: 14.99,
-      image: "https://picsum.photos/400/200",
+      name: "Braised Pork Chop",
+      price: 17.99,
+      image: require("../../assets/images/porkchop.jpg"),
       description: "This is a description of the item",
     },
     {
       id: 2,
-      name: "Spicy Chicken Plate",
+      name: "Italian Pizza",
       price: 14.99,
-      image: "https://picsum.photos/400/200",
+      image: require("../../assets/images/pizza.jpg"),
       description: "This is a description of the item",
     },
     {
       id: 3,
-      name: "Shaking Beef Plate",
-      price: 14.99,
-      image: "https://picsum.photos/400/200",
+      name: "Filet Mignon",
+      price: 21.99,
+      image: require("../../assets/images/steak.jpg"),
       description: "This is a description of the item",
     },
     {
       id: 4,
-      name: "Duck Plate",
-      price: 14.99,
-      image: "https://picsum.photos/400/200",
+      name: "Seafood Curry",
+      price: 17.99,
+      image: require("../../assets/images/shrimpsoup.jpg"),
       description: "This is a description of the item",
     },
   ]
@@ -90,23 +90,13 @@ const Favorites = () => {
       ) : (
         <View
           style={{
-            marginBottom: 50,
-            marginTop: 10,
+            paddingBottom: 10,
+            paddingTop: 10,
             justifyContent: "center",
             alignItems: "center",
+            backgroundColor: "#faf4f6",
           }}
         >
-          <Text
-            style={{
-              fontSize: 20,
-              fontWeight: "bold",
-              marginTop: 10,
-              marginBottom: 20,
-            }}
-          >
-            Our Favorites
-          </Text>
-
           <FlatList
             contentContainerStyle={{
               alignItems: "center",

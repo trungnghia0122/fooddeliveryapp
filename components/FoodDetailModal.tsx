@@ -1,5 +1,5 @@
 import { Box } from "./ui/box"
-import { Button } from "./ui/button"
+import { Button, ButtonText } from "./ui/button"
 import { Center } from "./ui/center"
 import { Image, Text } from "react-native"
 import { useContext } from "react"
@@ -9,7 +9,7 @@ interface FoodDetailModalProps {
   name: string
   price: number
   description: string
-  image: string
+  image: any
 }
 
 const FoodDetailModal = ({
@@ -29,7 +29,7 @@ const FoodDetailModal = ({
           marginBottom: 50,
         }}
       >
-        <Image source={{ uri: image }} style={{ width: 350, height: 200 }} />
+        <Image source={image} style={{ width: 350, height: 200 }} />
         <Box style={{ gap: 10, marginTop: 20, alignItems: "center" }}>
           <Text style={{ fontSize: 20, fontWeight: "bold" }}> {name}</Text>
           <Text> {description}</Text>
@@ -48,12 +48,13 @@ const FoodDetailModal = ({
               },
             ])
           }
-          variant='outline'
+          className='bg-blue-500 text-typography-900'
+          variant='solid'
           size='lg'
           action='primary'
         >
-          <Text>ADD TO CART</Text>
-          <Text>{price}</Text>
+          <ButtonText>ADD TO CART</ButtonText>
+          <ButtonText>{price}</ButtonText>
         </Button>
       </Box>
     </Center>

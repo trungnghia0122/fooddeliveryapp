@@ -11,21 +11,21 @@ const Drinks = () => {
       id: 1,
       name: "Coke",
       price: 2.99,
-      image: "https://picsum.photos/400/200",
+      image: require("../../assets/images/coke.jpg"),
       description: "This is a description of the item",
     },
     {
       id: 2,
-      name: "Sprite",
+      name: "Blueberry Hibiscus",
       price: 2.99,
-      image: "https://picsum.photos/400/200",
+      image: require("../../assets/images/blueberry.jpg"),
       description: "This is a description of the item",
     },
     {
       id: 3,
-      name: "Iced Tea",
+      name: "Lemonade",
       price: 2.99,
-      image: "https://picsum.photos/400/200",
+      image: require("../../assets/images/lemonade.jpg"),
       description: "This is a description of the item",
     },
   ]
@@ -83,22 +83,13 @@ const Drinks = () => {
       ) : (
         <View
           style={{
-            marginBottom: 50,
-            marginTop: 10,
+            paddingBottom: 10,
+            paddingTop: 10,
             justifyContent: "center",
             alignItems: "center",
+            backgroundColor: "#faf4f6",
           }}
         >
-          <Text
-            style={{
-              fontSize: 20,
-              fontWeight: "bold",
-              marginTop: 10,
-              marginBottom: 20,
-            }}
-          >
-            Our Drinks
-          </Text>
           <FlatList
             contentContainerStyle={{
               alignItems: "center",
